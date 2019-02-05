@@ -16,9 +16,9 @@ class OnboardingViewController: UIViewController {
     
     // MARK: Datasource Variables
     var datasource = [
-        OnboardingCollectionViewCellModel(title: "Crie seus compromissos", description: "Vamos comecar", imageName: "background"),
-        OnboardingCollectionViewCellModel(title: "Arrocha menino", description: "Clique no '+'para comecar ", imageName: "background"),
-        OnboardingCollectionViewCellModel(title: "😱", description: "Voce vai se surpreender ", imageName: "background")
+        OnboardingCollectionViewCellModel(title: "Crie seus compromissos", description: "Vamos comecar", imageName: "background",button: true),
+        OnboardingCollectionViewCellModel(title: "Arrocha menino", description: "Clique no '+'para comecar ", imageName: "background",button: true),
+        OnboardingCollectionViewCellModel(title: "😱", description: "Voce vai se surpreender ", imageName: "background",button: false)
     ]
     
     override func viewDidLoad() {
