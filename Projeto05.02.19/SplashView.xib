@@ -16,17 +16,30 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APP TOP " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp0-5f-HyL">
-                    <rect key="frame" x="150" y="323" width="74" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-rr-Xoo">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP TOP " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zp0-5f-HyL">
+                    <rect key="frame" x="125.5" y="103.5" width="124.5" height="36"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zp0-5f-HyL" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-222" id="RJt-y4-W2b"/>
+                <constraint firstItem="JZB-rr-Xoo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Un1-aR-J8o"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JZB-rr-Xoo" secondAttribute="bottom" id="gLC-DU-OgS"/>
+                <constraint firstItem="zp0-5f-HyL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jP9-bg-wuo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JZB-rr-Xoo" secondAttribute="trailing" id="wla-vO-9Ye"/>
+                <constraint firstItem="JZB-rr-Xoo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="x7C-vA-fwQ"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
         </view>
     </objects>
+    <resources>
+        <image name="splash.png" width="675" height="1200"/>
+    </resources>
 </document>

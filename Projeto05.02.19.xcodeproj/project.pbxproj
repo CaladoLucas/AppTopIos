@@ -13,6 +13,12 @@
 		57CB0A25220A3EFB00E31B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A24220A3EFB00E31B33 /* Assets.xcassets */; };
 		57CB0A28220A3EFB00E31B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A26220A3EFB00E31B33 /* LaunchScreen.storyboard */; };
 		57CB0A30220A41ED00E31B33 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A2F220A41ED00E31B33 /* SplashView.xib */; };
+		57CB0A38220A470700E31B33 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB0A35220A470700E31B33 /* OnboardingViewController.swift */; };
+		57CB0A39220A470700E31B33 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB0A36220A470700E31B33 /* OnboardingCollectionViewCell.swift */; };
+		57CB0A3A220A470700E31B33 /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A37220A470700E31B33 /* OnboardingCollectionViewCell.xib */; };
+		57CB0A3C220A474800E31B33 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A3B220A474800E31B33 /* Onboarding.storyboard */; };
+		57CB0A3E220A49B500E31B33 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A3D220A49B500E31B33 /* splash.png */; };
+		57CB0A40220A4BB400E31B33 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A3F220A4BB400E31B33 /* background.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		57CB0A27220A3EFB00E31B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57CB0A29220A3EFB00E31B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57CB0A2F220A41ED00E31B33 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
+		57CB0A35220A470700E31B33 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		57CB0A36220A470700E31B33 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		57CB0A37220A470700E31B33 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		57CB0A3B220A474800E31B33 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		57CB0A3D220A49B500E31B33 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = ../../../../Downloads/splash.png; sourceTree = "<group>"; };
+		57CB0A3F220A4BB400E31B33 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../../Downloads/background.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,12 @@
 		57CB0A1C220A3EF900E31B33 /* Projeto05.02.19 */ = {
 			isa = PBXGroup;
 			children = (
+				57CB0A3F220A4BB400E31B33 /* background.jpg */,
+				57CB0A3D220A49B500E31B33 /* splash.png */,
+				57CB0A3B220A474800E31B33 /* Onboarding.storyboard */,
+				57CB0A36220A470700E31B33 /* OnboardingCollectionViewCell.swift */,
+				57CB0A37220A470700E31B33 /* OnboardingCollectionViewCell.xib */,
+				57CB0A35220A470700E31B33 /* OnboardingViewController.swift */,
 				57CB0A1D220A3EF900E31B33 /* AppDelegate.swift */,
 				57CB0A2F220A41ED00E31B33 /* SplashView.xib */,
 				57CB0A1F220A3EF900E31B33 /* ViewController.swift */,
@@ -126,9 +144,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CB0A28220A3EFB00E31B33 /* LaunchScreen.storyboard in Resources */,
+				57CB0A3E220A49B500E31B33 /* splash.png in Resources */,
 				57CB0A30220A41ED00E31B33 /* SplashView.xib in Resources */,
 				57CB0A25220A3EFB00E31B33 /* Assets.xcassets in Resources */,
+				57CB0A3C220A474800E31B33 /* Onboarding.storyboard in Resources */,
+				57CB0A40220A4BB400E31B33 /* background.jpg in Resources */,
 				57CB0A23220A3EF900E31B33 /* Main.storyboard in Resources */,
+				57CB0A3A220A470700E31B33 /* OnboardingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CB0A20220A3EF900E31B33 /* ViewController.swift in Sources */,
+				57CB0A38220A470700E31B33 /* OnboardingViewController.swift in Sources */,
 				57CB0A1E220A3EF900E31B33 /* AppDelegate.swift in Sources */,
+				57CB0A39220A470700E31B33 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
