@@ -41,6 +41,8 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
         descriptionLabel.text = model.description
         button.isHidden = model.button!
         
+        
+        
         if let imageName = model.imageName {
             backgroundImage.image = UIImage(named: imageName)
         }
