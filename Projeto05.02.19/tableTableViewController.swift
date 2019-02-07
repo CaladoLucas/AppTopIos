@@ -21,23 +21,6 @@ class TableViewController: UITableViewController {
 
     }
     
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.willTransition(to: newCollection, with: coordinator)
-        // landscape
-        //        if newCollection.verticalSizeClass == .compact {
-        //            buttonTopConstraint.constant = 200
-        //        } else {
-        //            buttonTopConstraint.constant = 24
-        //        }
-        
-        if newCollection.verticalSizeClass == .compact {
-            onboardingViewController = UIStoryboard(name: "Onboarding", bundle: nil).instantiateInitialViewController()
-            present(onboardingViewController!, animated: true, completion: nil)
-        } else {
-            onboardingViewController?.dismiss(animated: true, completion: nil)
-        }
-    }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("Itens no banco \(controle.selecionarItens().count)")
         return controle.selecionarItens().count

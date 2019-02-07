@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Onboarding View Controller-->
+        <!--Title-->
         <scene sceneID="0Hk-KJ-1eT">
             <objects>
-                <viewController id="i4t-Li-Qz6" customClass="OnboardingViewController" customModule="Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i4t-Li-Qz6" customClass="OnboardingViewController" customModule="Projeto05_02_19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZwJ-PD-Ih8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,13 +39,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WHD-eb-YEV"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="qJr-BV-mwe"/>
                     <connections>
-                        <outlet property="collectionView" destination="Ha4-jd-9Mt" id="lxA-Oc-CJk"/>
+                        <outlet property="collectionView" destination="Ha4-jd-9Mt" id="uUZ-rD-G9J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eM8-4d-Dpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="41"/>
+            <point key="canvasLocation" x="964" y="242"/>
         </scene>
     </scenes>
 </document>

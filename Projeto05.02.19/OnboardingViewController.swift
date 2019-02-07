@@ -11,9 +11,8 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-    // MARK: IBOutlets Variables
+
     @IBOutlet weak var collectionView: UICollectionView!
-    
     // MARK: Datasource Variables
     var datasource = [
         OnboardingCollectionViewCellModel(title: "Crie seus compromissos", description: "Vamos comecar", imageName: "background",button: true),
@@ -35,10 +34,11 @@ class OnboardingViewController: UIViewController {
         gesture.direction = .down
         view.addGestureRecognizer(gesture)
 //        configureButton()
+        
     }
     
     @objc func gestureApplied() {
-        dismiss(animated: true, completion: nil)
+       self.dismiss(animated: true, completion: nil)
     }
     
 //    private func configureButton() {
@@ -53,7 +53,9 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:
+            "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
+        
         let row = indexPath.row
         cell.populate(model: datasource[row])
         return cell
