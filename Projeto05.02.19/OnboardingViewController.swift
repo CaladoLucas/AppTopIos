@@ -38,7 +38,10 @@ class OnboardingViewController: UIViewController {
     }
     
     @objc func gestureApplied() {
-       self.dismiss(animated: true, completion: nil)
+
+        UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
+
+        self.dismiss(animated: true, completion: nil)
     }
     
 //    private func configureButton() {
