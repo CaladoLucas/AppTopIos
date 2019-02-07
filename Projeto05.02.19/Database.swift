@@ -1,27 +1,27 @@
 import Foundation
 
-class JobCategory: NSObject, NSCoding {
-    var id: Int
-    var name: String
-    var URLString: String
+class Database {
     
-    init(id: Int, name: String, URLString: String) {
-        self.id = id
-        self.name = name
-        self.URLString = URLString
+    static let shared = Database()
+    var storage:Array<String> = []
+    
+    private init(){}
+    
+    func insert(add value: String) {
+        self.storage.append(value)
     }
     
-    // MARK: - NSCoding
-    required init(coder aDecoder: NSCoder) {
-        id = aDecoder.decodeObject(forKey: "id") as? Int ?? aDecoder.decodeInteger(forKey: "id")
-        name = aDecoder.decodeObject(forKey: "name") as! String
-        URLString = aDecoder.decodeObject(forKey: "URLString") as! String
+    func delete(add value: String) {
+        if let index = self.storage.firstIndex(of: value) {
+            self.storage.remove(at: index)
+        }
     }
     
-    func encode(with aCoder: NSCoder) {
-        aCoder.encode(id, forKey: "id")
-        aCoder.encode(name, forKey: "name")
-        aCoder.encode(URLString, forKey: "URLString")
+    func list() -> Array<String>{
+        return self.storage
+    }
+    
+    static func instance() -> Database {
+        return self.shared
     }
 }
-

@@ -10,18 +10,14 @@ import UIKit
 
 class CreateViewController: UIViewController {
 
-    @IBOutlet weak var todo: UITextField!
-    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var todoText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
-    @IBAction func save(_ sender: UIButton) {
-        
-        if name.text != "" {
-            
-        }
+
+    @IBAction func saveData(_ sender: Any) {
+        print(todoText.text!)
     }
     
    }

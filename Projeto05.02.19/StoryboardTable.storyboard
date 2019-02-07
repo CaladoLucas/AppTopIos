@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--Lista-->
         <scene sceneID="wO7-lN-8he">
             <objects>
-                <tableViewController storyboardIdentifier="tableTableViewController" id="tz7-iD-JHB" customClass="tableTableViewController" sceneMemberID="viewController">
+                <tableViewController id="tz7-iD-JHB" customClass="tableTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XIR-Kv-8W4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="lhA-aH-yKI">
+                    <navigationItem key="navigationItem" title="Lista" id="lhA-aH-yKI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Aft-no-oya">
                             <connections>
                                 <segue destination="Y0s-Jj-wH2" kind="show" id="q6c-zP-j2T"/>
