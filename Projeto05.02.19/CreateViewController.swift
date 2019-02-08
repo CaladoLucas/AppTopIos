@@ -9,6 +9,7 @@
 import UIKit
 
 class CreateViewController: UIViewController {
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var todoText: UITextField!
     override func viewDidLoad() {
@@ -17,7 +18,17 @@ class CreateViewController: UIViewController {
     }
 
     @IBAction func saveData(_ sender: Any) {
-        print(todoText.text!)
-    }
+        print(Model.name)
+        
+        var array = [String]()
+        
+        array = defaults.value(forKey: "TODOS") as! [String]
+
+        array.append(todoText.text ?? "")
+        
+        
+        defaults.set(array, forKey: "TODOS")
+       
     
    }
+}

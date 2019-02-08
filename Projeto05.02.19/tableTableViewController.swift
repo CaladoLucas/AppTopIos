@@ -12,6 +12,9 @@ class TableViewController: UITableViewController {
     
     var controle = Control.instanceControl()
     var onboardingViewController: UIViewController?
+    let defaults = UserDefaults.standard
+    var array = [String]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +24,15 @@ class TableViewController: UITableViewController {
                 present(viewController, animated: true, completion: nil)
             }
         }
-
+        array = defaults.value(forKey: "TODOS") as! [String]
 
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Itens no banco \(controle.selecionarItens().count)")
-        return controle.selecionarItens().count
+//        print("Itens no banco \(array.count)")
+ 
+        print(array.count)
+        return array.count
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,8 +45,7 @@ class TableViewController: UITableViewController {
         print("listar itens na tela")
         let cell = tableView.dequeueReusableCell(withIdentifier: "meuidentificador", for: indexPath) as! myTableViewCell
         
-        print("\(controle.selecionarItens()[indexPath.row])")
-        cell.texto?.text = "\(controle.selecionarItens()[indexPath.row])"
+        cell.texto?.text = "\(array[indexPath.row])"
         return cell
     }
     

@@ -23,7 +23,8 @@
 		57CB0A57220A5BE500E31B33 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A55220A5BE500E31B33 /* background.jpg */; };
 		57CB0A58220A5BE500E31B33 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 57CB0A56220A5BE500E31B33 /* splash.png */; };
 		57FA1E1D220CE6BA00919353 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E1C220CE6BA00919353 /* CreateViewController.swift */; };
-		57FA1E1F220CEE1F00919353 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E1E220CEE1F00919353 /* Control.swift */; };
+		57FA1E21220CF9E300919353 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E20220CF9E300919353 /* Control.swift */; };
+		57FA1E23220CFAE500919353 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E22220CFAE500919353 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,8 @@
 		57CB0A55220A5BE500E31B33 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		57CB0A56220A5BE500E31B33 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		57FA1E1C220CE6BA00919353 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
-		57FA1E1E220CEE1F00919353 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		57FA1E20220CF9E300919353 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		57FA1E22220CFAE500919353 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,7 @@
 		57CB0A1C220A3EF900E31B33 /* Projeto05.02.19 */ = {
 			isa = PBXGroup;
 			children = (
-				57FA1E1E220CEE1F00919353 /* Control.swift */,
+				57FA1E20220CF9E300919353 /* Control.swift */,
 				57CB0A55220A5BE500E31B33 /* background.jpg */,
 				57CB0A56220A5BE500E31B33 /* splash.png */,
 				57CB0A51220A58BC00E31B33 /* Database.swift */,
@@ -96,6 +98,7 @@
 				57CB0A24220A3EFB00E31B33 /* Assets.xcassets */,
 				57CB0A26220A3EFB00E31B33 /* LaunchScreen.storyboard */,
 				57CB0A29220A3EFB00E31B33 /* Info.plist */,
+				57FA1E22220CFAE500919353 /* Model.swift */,
 			);
 			path = Projeto05.02.19;
 			sourceTree = "<group>";
@@ -181,7 +184,8 @@
 				57CB0A20220A3EF900E31B33 /* ViewController.swift in Sources */,
 				57CB0A4E220A58A000E31B33 /* myTableViewCell.swift in Sources */,
 				57CB0A38220A470700E31B33 /* OnboardingViewController.swift in Sources */,
-				57FA1E1F220CEE1F00919353 /* Control.swift in Sources */,
+				57FA1E23220CFAE500919353 /* Model.swift in Sources */,
+				57FA1E21220CF9E300919353 /* Control.swift in Sources */,
 				57CB0A1E220A3EF900E31B33 /* AppDelegate.swift in Sources */,
 				57CB0A53220A58BD00E31B33 /* Database.swift in Sources */,
 				57CB0A39220A470700E31B33 /* OnboardingCollectionViewCell.swift in Sources */,
