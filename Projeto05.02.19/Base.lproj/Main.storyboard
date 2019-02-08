@@ -96,13 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="E90-Xy-83m"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="ZsS-gs-OiB">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="6oj-Ix-GOi">
-                            <connections>
-                                <segue destination="lmL-xa-zHq" kind="show" id="qmP-kJ-cut"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="ZsS-gs-OiB"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="todoText" destination="gGg-FJ-1U9" id="10W-7j-RLF"/>
@@ -161,8 +155,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UPt-SK-ZIK"/>
-        <segue reference="mAM-9I-nbF"/>
         <segue reference="Zra-qb-V5r"/>
     </inferredMetricsTieBreakers>
 </document>
