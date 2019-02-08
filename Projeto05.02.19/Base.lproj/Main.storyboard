@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KzY-oA-Lo4" userLabel="meuidentificador" customClass="myTableViewCell" customModule="Projeto05_02_19" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="meuidentificador" id="KzY-oA-Lo4" userLabel="meuidentificador" customClass="myTableViewCell" customModule="Projeto05_02_19" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KzY-oA-Lo4" id="wv8-eW-JUV">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adm-ND-zVQ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adm-ND-zVQ">
                                             <rect key="frame" x="26" y="11" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -35,6 +35,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="texto" destination="adm-ND-zVQ" id="M0U-rO-lqX"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -56,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="1140" y="155.17241379310346"/>
         </scene>
-        <!--Create View Controller-->
+        <!--Title-->
         <scene sceneID="jnY-IQ-XTh">
             <objects>
                 <viewController id="Ciq-SS-F8e" customClass="CreateViewController" customModule="Projeto05_02_19" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,12 +80,22 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="saveData:" destination="Ciq-SS-F8e" eventType="touchUpInside" id="JXn-5N-DGI"/>
+                                    <segue destination="d1M-Cj-ezK" kind="show" id="Zra-qb-V5r"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="E90-Xy-83m"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="ZsS-gs-OiB">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="6oj-Ix-GOi">
+                            <connections>
+                                <segue destination="lmL-xa-zHq" kind="show" id="qmP-kJ-cut"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="todoText" destination="gGg-FJ-1U9" id="10W-7j-RLF"/>
                     </connections>
@@ -90,6 +103,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mq-35-qkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2073" y="155"/>
+        </scene>
+        <!--Mapcontroller View Controller-->
+        <scene sceneID="ML5-pb-tKV">
+            <objects>
+                <viewController id="lmL-xa-zHq" customClass="mapcontrollerViewController" customModule="Projeto05_02_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zld-WN-xqh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8GJ-48-kgB" customClass="map">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ynb-dC-gem" firstAttribute="trailing" secondItem="8GJ-48-kgB" secondAttribute="trailing" id="6sy-en-5s0"/>
+                            <constraint firstItem="8GJ-48-kgB" firstAttribute="top" secondItem="ynb-dC-gem" secondAttribute="top" id="dSu-Of-dFp"/>
+                            <constraint firstItem="8GJ-48-kgB" firstAttribute="leading" secondItem="ynb-dC-gem" secondAttribute="leading" id="dr7-i0-2qg"/>
+                            <constraint firstItem="ynb-dC-gem" firstAttribute="bottom" secondItem="8GJ-48-kgB" secondAttribute="bottom" id="iPA-xL-dU5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ynb-dC-gem"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapaNaTela" destination="8GJ-48-kgB" id="Q2p-TK-0Al"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQj-t7-Abj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oau-Bt-VIa">
@@ -110,4 +152,7 @@
             <point key="canvasLocation" x="200.80000000000001" y="155.17241379310346"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Zra-qb-V5r"/>
+    </inferredMetricsTieBreakers>
 </document>

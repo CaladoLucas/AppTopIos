@@ -25,6 +25,8 @@
 		57FA1E1D220CE6BA00919353 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E1C220CE6BA00919353 /* CreateViewController.swift */; };
 		57FA1E21220CF9E300919353 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E20220CF9E300919353 /* Control.swift */; };
 		57FA1E23220CFAE500919353 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E22220CFAE500919353 /* Model.swift */; };
+		57FA1E25220D033000919353 /* mapcontrollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E24220D033000919353 /* mapcontrollerViewController.swift */; };
+		57FA1E27220D045900919353 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FA1E26220D045900919353 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		57FA1E1C220CE6BA00919353 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		57FA1E20220CF9E300919353 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		57FA1E22220CFAE500919353 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		57FA1E24220D033000919353 /* mapcontrollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapcontrollerViewController.swift; sourceTree = "<group>"; };
+		57FA1E26220D045900919353 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				57CB0A26220A3EFB00E31B33 /* LaunchScreen.storyboard */,
 				57CB0A29220A3EFB00E31B33 /* Info.plist */,
 				57FA1E22220CFAE500919353 /* Model.swift */,
+				57FA1E24220D033000919353 /* mapcontrollerViewController.swift */,
+				57FA1E26220D045900919353 /* Artwork.swift */,
 			);
 			path = Projeto05.02.19;
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 				57FA1E1D220CE6BA00919353 /* CreateViewController.swift in Sources */,
 				57CB0A50220A58AB00E31B33 /* tableTableViewController.swift in Sources */,
 				57CB0A20220A3EF900E31B33 /* ViewController.swift in Sources */,
+				57FA1E25220D033000919353 /* mapcontrollerViewController.swift in Sources */,
 				57CB0A4E220A58A000E31B33 /* myTableViewCell.swift in Sources */,
 				57CB0A38220A470700E31B33 /* OnboardingViewController.swift in Sources */,
+				57FA1E27220D045900919353 /* Artwork.swift in Sources */,
 				57FA1E23220CFAE500919353 /* Model.swift in Sources */,
 				57FA1E21220CF9E300919353 /* Control.swift in Sources */,
 				57CB0A1E220A3EF900E31B33 /* AppDelegate.swift in Sources */,

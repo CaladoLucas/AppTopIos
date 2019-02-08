@@ -44,7 +44,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("listar itens na tela")
         let cell = tableView.dequeueReusableCell(withIdentifier: "meuidentificador", for: indexPath) as! myTableViewCell
-        
+        print(array[indexPath.row])
         cell.texto?.text = "\(array[indexPath.row])"
         return cell
     }
@@ -52,13 +52,10 @@ class TableViewController: UITableViewController {
     // ====================================================================================================
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete && controle.isAdmin {
-            controle.deletar(item: controle.selecionarItens()[indexPath.row])
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else {
-            let alert = UIAlertController(title: "Aviso", message:"Somente ADMs Podem Apagar", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
+
+        array.remove(at: indexPath.row)
+        defaults.set(array, forKey: "TODOS")
+        
+        tableView.deleteRows(at: [indexPath], with: .fade)
     }
 }
