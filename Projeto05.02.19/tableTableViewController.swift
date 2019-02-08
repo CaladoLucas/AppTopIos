@@ -24,7 +24,8 @@ class TableViewController: UITableViewController {
                 present(viewController, animated: true, completion: nil)
             }
         }
-        array = defaults.value(forKey: "TODOS") as! [String]
+        
+        array = defaults.value(forKey: "TODOS") as? [String] ?? [String]()
 
     }
     

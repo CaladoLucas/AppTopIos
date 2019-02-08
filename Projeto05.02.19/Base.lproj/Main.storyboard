@@ -37,6 +37,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="texto" destination="adm-ND-zVQ" id="M0U-rO-lqX"/>
+                                    <segue destination="lmL-xa-zHq" kind="show" id="mAM-9I-nbF"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -160,6 +161,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="UPt-SK-ZIK"/>
+        <segue reference="mAM-9I-nbF"/>
         <segue reference="Zra-qb-V5r"/>
     </inferredMetricsTieBreakers>
 </document>

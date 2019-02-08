@@ -22,7 +22,7 @@ class CreateViewController: UIViewController {
         
         var array = [String]()
         
-        array = defaults.value(forKey: "TODOS") as! [String]
+        array = defaults.value(forKey: "TODOS") as? [String] ?? [String]()
 
         array.append(todoText.text ?? "")
         
